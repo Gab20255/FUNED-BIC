@@ -11,7 +11,7 @@ nltk.download('omw-1.4')
 nltk.download('averaged_perceptron_tagger')
 
 # Exemplo de textos brutos
-with open(r'C:\Users\gabri\OneDrive\DesenvolvimentodeSoftware2\BIC\ARQUIVOS\Textos_bic.txt', 'r', encoding='utf-8') as f:
+with open(r'C:\Users\gabri\OneDrive\DesenvolvimentodeSoftware2\BIC\FUNED-BIC-main\FUNED-BIC-main\ARQUIVOS\Textos_bic.txt', 'r', encoding='utf-8') as f:
     textos_brutos = f.read().lower()  # deixa tudo minúsculo
     textos_brutos = re.sub(r'[^\w\s]', '', textos_brutos)  # remove pontuação
 
@@ -156,3 +156,4 @@ plt.tight_layout()
 plt.savefig("MAPADECALOR.png", dpi=300)   # SALVAR ANTES
 plt.show()
 plt.close()
+
